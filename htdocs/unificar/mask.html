@@ -1,0 +1,35 @@
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="icone/palmeira.ico">
+    <title>Exemplo de navbar fixo ao topo, usando Bootstrap.</title>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Estilos customizados para esse template -->
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+	    $("#cpf").mask("000.000.000-00", {reverse: false})     
+
+    })       
+    </script>
+    <script>
+        function limparMascara(){
+        $("#cpf").unmask()
+    }
+    </script>
+
+<script>
+    function lettersonly(input) {
+        var regex = /[~0-9]/gi;
+        input.value = input.value.replace(regex,""); 
+        
+    }
+    
+    </script>
+    
